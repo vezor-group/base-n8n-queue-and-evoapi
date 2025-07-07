@@ -1,0 +1,7 @@
+# Dados persistentes dos containers
+n8n-data/
+postgres-data/
+redis-data/
+
+# Arquivos de ambiente (sensíveis)
+.env

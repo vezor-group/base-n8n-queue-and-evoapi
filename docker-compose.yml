@@ -1,0 +1,92 @@
+version: "3.9"
+
+volumes:
+  n8n-data:
+  postgres-data:
+  redis-data:
+
+networks:
+  n8n-network:
+    driver: bridge
+
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: postgres-n8n
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${DB_POSTGRESDB_USER:-admin}
+      POSTGRES_PASSWORD: ${DB_POSTGRESDB_PASSWORD:-postgres2025}
+      POSTGRES_DB: ${DB_POSTGRESDB_DATABASE:-n8n}
+      TZ: America/Sao_Paulo
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - n8n-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_POSTGRESDB_USER:-admin}"]
+      interval: 10s
+      retries: 5
+
+  redis:
+    image: redis:alpine
+    container_name: redis-n8n
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - redis-data:/data
+    networks:
+      - n8n-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+
+  n8n-editor:
+    image: n8nio/n8n:latest
+    container_name: n8n-editor
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    networks:
+      - n8n-network
+    volumes:
+      - n8n-data:/home/node/.n8n
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
+
+  n8n-worker:
+    image: n8nio/n8n:latest
+    container_name: n8n-worker
+    restart: unless-stopped
+    command: worker
+    networks:
+      - n8n-network
+    volumes:
+      - n8n-data:/home/node/.n8n
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
+
+  n8n-webhook:
+    image: n8nio/n8n:latest
+    container_name: n8n-webhook
+    restart: unless-stopped
+    command: webhook
+    networks:
+      - n8n-network
+    volumes:
+      - n8n-data:/home/node/.n8n
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
