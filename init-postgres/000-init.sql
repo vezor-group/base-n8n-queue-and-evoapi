@@ -1,0 +1,2 @@
+CREATE DATABASE "evolution-app";
+CREATE EXTENSION IF NOT EXISTS vector;
