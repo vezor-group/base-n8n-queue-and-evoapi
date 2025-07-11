@@ -45,7 +45,7 @@ services:
     restart: unless-stopped
     command: start
     ports:
-      - "5679:5678"
+      - "5678:5678"
     env_file: .env
     volumes:
       - n8n-data:/home/node/.n8n
