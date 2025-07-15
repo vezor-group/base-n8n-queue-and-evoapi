@@ -87,7 +87,7 @@ services:
     restart: unless-stopped
     ports:
       - "8080:8080"
-    env_file: evolution.env          # variáveis só para o Evolution
+    env_file: evolution.env # variáveis só para o Evolution
     volumes:
       - evolution-instances:/evolution/instances
     depends_on:
