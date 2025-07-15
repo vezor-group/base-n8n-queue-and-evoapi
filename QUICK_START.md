@@ -13,8 +13,8 @@ git clone <url-do-repositorio>
 cd n8n-queue
 
 # Configure as variáveis de ambiente
-cp env.example .env
 cp evolution.env.example evolution.env
+cp .env.example .env
 
 # Edite os arquivos com suas senhas
 nano .env
