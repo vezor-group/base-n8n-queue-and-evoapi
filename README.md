@@ -42,16 +42,14 @@ O sistema é composto pelos seguintes componentes:
 
 2. **Configure as variáveis de ambiente**
     ```bash
-    # Copie os arquivos de exemplo
-    cp evolution.env.example evolution.env
+    # Copie o arquivo de exemplo para criar seu ambiente
     cp .env.example .env
 
-    # entre nos arquivos .env e evolution.env para editá-los
+    # Abra o arquivo .env para editá-lo
     nano .env
-    nano evolution.env
     ```
 
-    As variáveis que tiverem acompanhadas do comentário   ***`#MandatoryChange`*** ao seu lado deve ser mudada obrigatoriamente e  ***`#Change`*** conforme as necessidades do projeto.
+    As variáveis que tiverem acompanhadas do comentário   ***`#REQUIRED`*** ao seu lado deve ser mudada obrigatoriamente e  ***`#OPTIONAL`*** conforme as necessidades do projeto.
 
 
 5. **Inicie os serviços**
@@ -68,9 +66,9 @@ O sistema é composto pelos seguintes componentes:
 
 ### Acessando o n8n e a Evolution API
 
-**Abra o navegador** e acesse as urls passadas nas variáveis de ambiente:
-  - **.env**: `N8N_EDITOR_BASE_URL`
-  - **evolution.env**: `SERVER_URL`
+**Abra o navegador** e acesse as urls passadas nas variáveis de ambiente no arquivo `.env`:
+  - `N8N_EDITOR_BASE_URL`
+  - `SERVER_URL`
 
 ## 🔧 Manutenção
 
@@ -116,7 +114,7 @@ docker-compose up -d
 
 ### Problema: Evolution API não responde
 - Verifique se a porta 8080 está livre
-- Confirme as configurações no `evolution.env`
+- Confirme as configurações no `.env`
 - Verifique os logs: `docker-compose logs evolution-api`
 
 ### Problema: WhatsApp não conecta
@@ -132,4 +130,4 @@ Este projeto é proprietário e confidencial. Todos os direitos reservados. [LIC
 
 **Versão**: 1.0
 
-**Última atualização**: 14/07/2025
+**Última atualização**: 15/07/2025

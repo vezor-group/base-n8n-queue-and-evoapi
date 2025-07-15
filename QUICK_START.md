@@ -12,13 +12,11 @@
 git clone <url-do-repositorio>
 cd n8n-queue
 
-# Configure as variáveis de ambiente
-cp evolution.env.example evolution.env
+# Crie o arquivo de ambiente a partir do exemplo
 cp .env.example .env
 
-# Edite os arquivos com suas senhas
+# Edite o arquivo .env com suas senhas e chaves
 nano .env
-nano evolution.env
 ```
 
 ### 3. Inicie o Sistema
@@ -31,20 +29,19 @@ docker-compose ps
 ```
 
 ### 4. Acesse as Interfaces
-- **.env**: `N8N_EDITOR_BASE_URL`
-- **evolution.env**: `SERVER_URL`
+- **n8n**: `N8N_EDITOR_BASE_URL`
+- **Evolution API**: `SERVER_URL`
+
+Ambas as URLs são configuradas no arquivo `.env`.
 
 ## 🔧 Configurações Essenciais
 
-### Senhas Obrigatórias (altere no .env)
+### Variáveis Obrigatórias (altere no .env)
 ```env
+# Senhas e Chaves Obrigatórias (#REQUIRED)
 POSTGRES_PASSWORD=your_postgres_password
 REDIS_PASSWORD=your_redis_password
 N8N_ENCRYPTION_KEY=your_n8n_encryption_key
-```
-
-### Chave API Evolution (altere no evolution.env)
-```env
 AUTHENTICATION_API_KEY=your_api_key
 ```
 
