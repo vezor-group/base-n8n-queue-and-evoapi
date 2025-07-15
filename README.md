@@ -4,6 +4,9 @@
 
 Este projeto implementa uma solução completa de automação de processos utilizando **n8n** (plataforma de automação de workflows) integrada com **Evolution API** (API para WhatsApp Business). O sistema permite criar automações complexas que interagem com WhatsApp, incluindo envio de mensagens, processamento de respostas e integração com diversos serviços.
 
+## ⚡ Start Rápido
+Se quiser fazer o start rápido, acesse: [QUICK_START.md](https://github.com/rafaelcesar0/n8n-queue/blob/main/QUICK_START.md)
+
 ## 🏗️ Arquitetura do Sistema
 
 O sistema é composto pelos seguintes componentes:
