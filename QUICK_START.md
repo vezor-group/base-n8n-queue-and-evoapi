@@ -38,14 +38,14 @@ docker-compose ps
 
 ### Senhas Obrigatórias (altere no .env)
 ```env
-POSTGRES_PASSWORD=sua_senha_postgres
-REDIS_PASSWORD=sua_senha_redis
-N8N_BASIC_AUTH_PASSWORD=sua_senha_n8n
+POSTGRES_PASSWORD=your_postgres_password
+REDIS_PASSWORD=your_redis_password
+N8N_ENCRYPTION_KEY=your_n8n_encryption_key
 ```
 
 ### Chave API Evolution (altere no evolution.env)
 ```env
-AUTHENTICATION_API_KEY=sua_chave_api_evolution
+AUTHENTICATION_API_KEY=your_api_key
 ```
 
 ## 🆘 Problemas Comuns

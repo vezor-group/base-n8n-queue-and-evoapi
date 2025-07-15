@@ -51,7 +51,7 @@ O sistema é composto pelos seguintes componentes:
     nano evolution.env
     ```
 
-    As variáveis que tiverem acompanhadas do comentário   ***`#Change`*** ao seu lado deve ser mudada conforme as necessidades do projeto.
+    As variáveis que tiverem acompanhadas do comentário   ***`#MandatoryChange`*** ao seu lado deve ser mudada obrigatoriamente e  ***`#Change`*** conforme as necessidades do projeto.
 
 
 5. **Inicie os serviços**
