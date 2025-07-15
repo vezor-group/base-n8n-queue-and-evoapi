@@ -126,7 +126,7 @@ docker-compose up -d
 
 ## 📄 Licença
 
-Este projeto é proprietário e confidencial. Todos os direitos reservados.
+Este projeto é proprietário e confidencial. Todos os direitos reservados. [LICENSE](https://github.com/rafaelcesar0/n8n-queue/blob/main/LICENSE.txt)
 
 ---
 
