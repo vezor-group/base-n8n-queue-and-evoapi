@@ -1,42 +1,21 @@
-LICENÇA DE USO COMERCIAL
+MIT License
 
-Versão 1.0 – Julho de 2025
+Copyright (c) 2025 Vezor Group
 
-Este Contrato de Licença de Usuário Final ("Contrato") é um acordo legal entre você (pessoa física ou jurídica, doravante "Licenciado") e Vezor (doravante "Autor") para o pacote de software e arquivos de configuração (doravante "Pacote") que acompanha esta licença.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Ao adquirir, instalar, copiar ou de outra forma utilizar o Pacote, você concorda em ficar vinculado aos termos deste Contrato. Se você não concorda com os termos deste Contrato, não adquira, instale ou utilize o Pacote.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. CONCESSÃO DE LICENÇA
-O Autor concede ao Licenciado uma licença não exclusiva, intransferível e revogável para usar o Pacote para seus próprios fins comerciais ou pessoais internos. Esta licença permite o uso em uma única instalação ou conforme especificado no momento da compra.
-
-2. PROPRIEDADE
-O Pacote é licenciado, não vendido. O Autor retém todos os direitos, títulos e interesses sobre o Pacote, incluindo todos os direitos autorais, marcas registradas e outros direitos de propriedade intelectual.
-
-3. RESTRIÇÕES DE USO
-O Licenciado NÃO PODE, em nenhuma circunstância:
-a) Revender, alugar, arrendar, emprestar, sublicenciar, redistribuir ou de outra forma transferir o Pacote, ou qualquer parte dele, a terceiros.
-b) Disponibilizar o Pacote em redes públicas, repositórios de código (públicos ou privados), ou qualquer outro meio que permita o acesso ou download por terceiros não licenciados.
-c) Fazer engenharia reversa, descompilar, desmontar ou tentar descobrir o código-fonte do Pacote.
-d) Remover ou alterar quaisquer avisos de direitos autorais, marcas registradas ou outros avisos de propriedade contidos no Pacote.
-e) Utilizar o Pacote para criar um produto concorrente.
-f) O Pacote e toda documentação associada são informações confidenciais. O Licenciado deve protegê-las com o mesmo grau de cuidado dispensado aos seus próprios segredos comerciais, no mínimo razoável, e não pode divulgá-las a terceiros sem autorização escrita do Autor.
-g) É vedado utilizar o Pacote, no todo ou em parte, para treinar, ajustar ou avaliar modelos de Inteligência Artificial, bem como para criar sistemas derivados que se beneficiem desse treinamento, salvo prévia autorização expressa e escrita do Autor.
-
-4. GARANTIA LIMITADA
-O Pacote é fornecido "COMO ESTÁ" ("AS IS"), sem qualquer tipo de garantia, expressa ou implícita, incluindo, mas não se limitando a, garantias de comercialização, adequação a um propósito específico e não violação.
-
-5. LIMITAÇÃO DE RESPONSABILIDADE
-Em nenhuma hipótese o Autor será responsável por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares ou consequenciais (incluindo, mas não se limitando a, lucros cessantes, perda de dados ou interrupção de negócios) decorrentes do uso ou da incapacidade de usar o Pacote.
-
-6. RESCISÃO
-Sem prejuízo de quaisquer outros direitos, o Autor pode rescindir este Contrato se o Licenciado não cumprir os termos e condições aqui estabelecidos. Em tal caso, o Licenciado deve destruir todas as cópias do Pacote e toda a sua documentação.
-
-7. LEI APLICÁVEL
-Este Contrato será regido e interpretado de acordo com as leis da República Federativa do Brasil. Fica eleito o foro da comarca de [SUA CIDADE/ESTADO] para dirimir quaisquer controvérsias oriundas deste Contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.
-
-8. ACORDO INTEGRAL
-Este Contrato constitui o acordo integral entre o Licenciado e o Autor em relação ao Pacote e substitui todas as comunicações, propostas e representações anteriores ou contemporâneas, orais ou escritas.
-
-Ao utilizar este Pacote, você reconhece que leu este Contrato, o compreendeu e concorda em ficar vinculado aos seus termos e condições.
-
-Copyright (c) 2025 Vezor. Todos os direitos reservados.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
