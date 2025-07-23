@@ -12,7 +12,7 @@ networks:
 services:
   # ------------------ DBs ------------------
   postgres:
-    image: pgvector/pgvector:pg17
+    image: pgvector/pgvector:pg16
     container_name: postgres
     restart: unless-stopped
     env_file: .env
